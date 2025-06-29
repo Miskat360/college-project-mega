@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@clerk/clerk-react": "^5.32.2",
     "@phosphor-icons/react": "^2.1.7",
     "@ramonak/react-progress-bar": "^5.2.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -13,6 +14,7 @@
     "isotope-layout": "^3.0.6",
     "jquery": "^3.7.1",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.7.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.1",
     "react-scripts": "5.0.1",

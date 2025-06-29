@@ -10,6 +10,10 @@ import AccountPage from "./pages/AccountPage";
 import ContactPage from "./pages/ContactPage";
 import BlogPage from "./pages/BlogPage";
 import BlogDetailsPage from "./pages/BlogDetailsPage";
+import SignInPage from "./pages/SignInPage";
+import SignUpPage from "./pages/SignUpPage";
+import UserDashboard from "./pages/user-dashboard/Dashboard";
+import Dashboard from "./pages/admin/Dashboard";
 
 function App() {
   return (
@@ -19,6 +23,8 @@ function App() {
 
       <Routes>
         <Route exact path="/" element={<HomePage />} />
+        <Route path="/sign-in/*" element={<SignInPage />} />
+        <Route path="/sign-up/*" element={<SignUpPage />} />
         <Route exact path="/shop" element={<ShopPage />} />
         <Route exact path="/product-details" element={<ProductDetailsPage />} />
         <Route exact path="/cart" element={<CartPage />} />
@@ -27,6 +33,10 @@ function App() {
         <Route exact path="/contact" element={<ContactPage />} />
         <Route exact path="/blog" element={<BlogPage />} />
         <Route exact path="/blog-details" element={<BlogDetailsPage />} />
+        {/* Admin dashboard  */}
+        <Route exact path="/admin" element={<Dashboard />} />
+        {/* User dashboard  */}
+        <Route exact path="/dashboard" element={<UserDashboard />} />
       </Routes>
     </BrowserRouter>
   );

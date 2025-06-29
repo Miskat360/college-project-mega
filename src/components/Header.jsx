@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import query from "jquery";
 import { Link, NavLink } from "react-router-dom";
+import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
@@ -406,19 +407,26 @@ const Header = () => {
                   </li>
                 </ul>
               </li>
-              <li className="border-right-item">
-                <Link
-                  to="/account"
-                  className="text-white text-sm py-8 flex-align gap-6"
-                >
-                  <span className="icon text-md d-flex">
-                    {" "}
-                    <i className="ph ph-user-circle" />{" "}
-                  </span>
-                  <span className="hover-text-decoration-underline">
-                    My Account
-                  </span>
-                </Link>
+              <li>
+                <SignedIn>
+                  <UserButton />
+                </SignedIn>
+              </li>
+              <li>
+                <SignedOut>
+                  <Link
+                    to="/sign-in"
+                    className="text-white text-sm py-8 flex-align gap-6"
+                  >
+                    <span className="icon text-md d-flex">
+                      {" "}
+                      <i className="ph ph-user-circle" />{" "}
+                    </span>
+                    <span className="hover-text-decoration-underline">
+                      My Account
+                    </span>
+                  </Link>
+                </SignedOut>
               </li>
             </ul>
           </div>
