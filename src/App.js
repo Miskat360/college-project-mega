@@ -8,6 +8,8 @@ import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import AccountPage from "./pages/AccountPage";
 import ContactPage from "./pages/ContactPage";
+import BlogPage from "./pages/BlogPage";
+import BlogDetailsPage from "./pages/BlogDetailsPage";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route exact path="/checkout" element={<CheckoutPage />} />
         <Route exact path="/account" element={<AccountPage />} />
         <Route exact path="/contact" element={<ContactPage />} />
+        <Route exact path="/blog" element={<BlogPage />} />
+        <Route exact path="/blog-details" element={<BlogDetailsPage />} />
       </Routes>
     </BrowserRouter>
   );

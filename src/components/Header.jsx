@@ -481,23 +481,18 @@ const Header = () => {
                   <span className="text-gray-600 text-xs">Your Location</span>
                   <div className="line-height-1">
                     <select
-                      defaultValue={1}
+                      defaultValue={"lakshmipur"}
                       className="js-example-basic-single border border-gray-200 border-end-0"
                       name="state"
                     >
-                      <option value={1}>Alabama</option>
-                      <option value={1}>Alaska</option>
-                      <option value={1}>Arizona</option>
-                      <option value={1}>Delaware</option>
-                      <option value={1}>Florida</option>
-                      <option value={1}>Georgia</option>
-                      <option value={1}>Hawaii</option>
-                      <option value={1}>Indiana</option>
-                      <option value={1}>Marzland</option>
-                      <option value={1}>Nevada</option>
-                      <option value={1}>New Jersey</option>
-                      <option value={1}>New Mexico</option>
-                      <option value={1}>New York</option>
+                      <option value={"dhaka"}>Dhaka</option>
+                      <option value={"chittagong"}>Chittagong</option>
+                      <option value={"khulna"}>Khulna</option>
+                      <option value={"lakshmipur"}>Lakshmipur</option>
+                      <option value={"sylhet"}>Sylhet</option>
+                      <option value={"rajshahi"}>Rajshahi</option>
+                      <option value={"narayanganj"}>Narayanganj</option>
+                      <option value={"rangpur"}>Rangpur</option>
                     </select>
                   </div>
                 </div>
